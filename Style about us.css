@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #123b7b;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.comments-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.curiosities {
+    background-color: #1e3d8e;
+    color: white;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.curiosities h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.curiosities ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.curiosities li {
+    margin-bottom: 10px;
+}
+
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.teacher-info {
+    padding: 20px;
+}
+
+.teacher-info h3 {
+    font-size: 1.8rem;
+    color: #123b7b;
+    margin-bottom: 10px;
+}
+
+.teacher-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #1f2a44; /* Color de fondo del menú */
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5); /* Sombra debajo del menú */
+}
+
+.nav-menu {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea los elementos en una fila */
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 20px; /* Espaciado entre los elementos del menú */
+}
+
+.nav-menu li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #ffffff; /* Color blanco para el texto */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: color 0.3s, background-color 0.3s; /* Transición suave */
+    position: relative; /* Necesario para los pseudoelementos */
+}
+
+/* Estilos para el enlace activo (Inicio) */
+.nav-menu li a.active {
+    color: #4ac7ff; /* Color de texto azul claro */
+}
+
+.nav-menu li a.active::before,
+.nav-menu li a.active::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #4ac7ff; /* Color del borde */
+    width: 10px;
+    height: 10px;
+}
+
+.nav-menu li a.active::before {
+    top: -5px;
+    left: -5px;
+    border-width: 2px 0 0 2px; /* Solo muestra la esquina superior izquierda */
+}
+
+.nav-menu li a.active::after {
+    bottom: -5px;
+    right: -5px;
+    border-width: 0 2px 2px 0; /* Solo muestra la esquina inferior derecha */
+}
+
+/* Efecto hover para el resto de enlaces */
+.nav-menu li a:hover {
+    color: #4ac7ff; /* Azul claro cuando se pasa el cursor */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif simple */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif; /* Asegúrate de que los encabezados también usen la misma fuente */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #123b7b;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.comments-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.curiosities {
+    background-color: #1e3d8e;
+    color: white;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.curiosities h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.curiosities ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.curiosities li {
+    margin-bottom: 10px;
+}
+
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.teacher-info {
+    padding: 20px;
+}
+
+.teacher-info h3 {
+    font-size: 1.8rem;
+    color: #123b7b;
+    margin-bottom: 10px;
+}
+
+.teacher-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.banner {
+    background-color: #00223f;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu-item.active {
+    color: #00bfff;
+}
+
+.menu-item.active::before, .menu-item.active::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #00bfff;
+    transition: all 0.3s ease;
+}
+
+.menu-item.active::before {
+    top: -5px;
+    left: -5px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.menu-item.active::after {
+    bottom: -5px;
+    right: -5px;
+    border-left: none;
+    border-top: none;
+}
+
+.menu-item.active:hover::before,
+.menu-item.active:hover::after {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-item:hover {
+    color: #00bfff;
+}

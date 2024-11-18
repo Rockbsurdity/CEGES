@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Slider de Imágenes</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html" class="menu-item active">Inicio</a></li>
+            <li><a href="Sobre nosotros.html" class="menu-item">Sobre Nosotros</a></li>
+            <li><a href="Galeria de proyectos.html" class="menu-item">Nuestros Proyectos y Contenidos</a></li>
+            <li><a href="blog.html" class="menu-item">Blog</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Slider de Imágenes -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides">
+                <!-- Imagen 1 -->
+                <div class="slide fade">
+                    <img src="img/ceges.jpeg" alt="Imagen 1">
+                </div>
+                <!-- Imagen 2 -->
+                <div class="slide fade">
+                    <img src="img/WhatsApp Image 2024-10-03 at 17.32.18_6240bf99.jpg" alt="Imagen 2">
+                </div>
+                <!-- Imagen 3 -->
+                <div class="slide fade">
+                    <img src="img/Untitled-design-10.png" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Controles del Slider -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Puntos de Navegación (Opcional) -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+    <!-- Scripts para el Slider -->
+    <script src="script.js"></script>
+
+    <div class="banner">
+        <p class="main-text">Disfrute La Experiencia Proporcionada Por</p>
+        <p class="sub-text"> 5to de Informática</p>
+    </div>
+    <!-- Imagen de fondo o decorativa -->
+<div class="welcome-image">
+    <img src="img/Screenshot 2024-10-21 180916.png" alt="Imagen de Bienvenida">
+</div>
+
+<div class="welcome-text">
+    <p class="welcome-title"><strong>Bienvenido</strong></p>
+    <p>
+        Somos 5to de Informática del CEGES, comprometidos con el aprendizaje, la innovación y el trabajo en el mundo de la informática.
+    </p>
+    <p>
+        Este blog es un espacio para el conocimiento, creación y colaboración de proyectos entre alumnos de 5to de secundaria que compartimos la pasión por la tecnología.
+    </p>
+    <p>
+        Nuestro objetivo es dejar una huella de motivación y poder ayudar a futuros estudiantes a que descubran el potencial que llevan dentro.
+    </p>
+</div>
+
+<p class="join-us">¡Únete a nosotros y forma parte de la próxima generación de profesionales de la tecnología!</p>
+
+<!-- Imágenes alineadas -->
+<div class="image-gallery">
+    <img src="img/stem 1.png" alt="Imagen 1">
+    <img src="img/stem 2.png" alt="Imagen 2">
+    <img src="img/stem 3.png" alt="Imagen 3">
+</div>
+
+
+</body>
+</html>

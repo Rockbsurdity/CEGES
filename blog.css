@@ -1,0 +1,93 @@
+nav {
+    background-color: #1f2a44; /* Fondo oscuro */
+    padding: 5px 0; /* Reducir el padding para hacer la barra más pequeña */
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5); /* Sombra debajo del menú */
+}
+
+.nav-menu {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea los elementos en una fila */
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 15px; /* Ajuste de espaciado entre los elementos del menú */
+}
+
+.nav-menu li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #ffffff; /* Color blanco para el texto */
+    font-size: 16px; /* Reducir ligeramente el tamaño del texto */
+    font-weight: bold; /* Negrita */
+    padding: 8px 8px; /* Reducir el espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: color 0.3s, background-color 0.3s; /* Transición suave */
+    position: relative; /* Necesario para los pseudoelementos */
+}
+
+/* Estilos para el enlace activo (Inicio) */
+.nav-menu li a.active {
+    color: #4ac7ff; /* Color de texto azul claro */
+}
+
+
+body {
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif simple */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif; /* Asegúrate de que los encabezados también usen la misma fuente */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los videos */
+    margin: 20px 0;
+}
+
+.project {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, una columna */
+    }
+}

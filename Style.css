@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente general del sitio */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #1f2a44;
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu, .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu li, .menu-item {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+/* Enlace activo */
+.nav-menu li a.active, .menu-item.active {
+    color: #00bfff;
+}
+
+.nav-menu li a.active::before, .menu-item.active::before,
+.nav-menu li a.active::after, .menu-item.active::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #00bfff;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a.active::before, .menu-item.active::before {
+    top: -5px;
+    left: -5px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.nav-menu li a.active::after, .menu-item.active::after {
+    bottom: -5px;
+    right: -5px;
+    border-left: none;
+    border-top: none;
+}
+
+.nav-menu li a:hover, .menu-item:hover {
+    color: #00bfff;
+}
+
+.nav-menu li a.active:hover::before, .menu-item.active:hover::before,
+.nav-menu li a.active:hover::after, .menu-item.active:hover::after {
+    width: 20px;
+    height: 20px;
+}
+/* Estilos para los títulos */
+h1, h2 {
+    font-family: Arial, sans-serif; /* Fuente consistente para los encabezados */
+}
+
+/* Estilos para el contenedor de videos */
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los videos */
+    margin: 20px 0;
+}
+
+.project {
+    text-align: center; /* Centrar el texto */
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .video-container {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, se muestra una sola columna */
+    }
+}
